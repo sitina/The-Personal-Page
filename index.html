@@ -15,11 +15,14 @@
 	<style>
 		* { padding: 0; margin: 0; }
 		body { background-color: #333; }
-		p { color: #333; font-family: Helvetica; font-size: 16px; line-height: 24px; margin-bottom: 22px; -webkit-font-smoothing: antialiased; }
+		p { margin: .75em 0 0; color: #333; font-family: Helvetica; font-size: 16px; line-height: 24px; margin-bottom: 22px; -webkit-font-smoothing: antialiased; -webkit-margin-after: 0; }
+		p:first-child { margin-top: 0; }
+		/*p > span, p > span:before { background: rgba(255, 255, 255, .8); }*/
+		/*p > span { padding: 3px; }*/
+		/*p > span:before { content: ''; position: absolute; left: -4px; top: 0; bottom: 0; width: 4px; }*/
 		a { color: #444; font-weight: bold; text-decoration: none; border-bottom: 1px solid rgba(30,30,30,0.3); }
 		a:hover { color: #222; border-bottom: 1px solid rgba(30,30,30,1); }
-		#monogram { width: 50px; padding: 50px 0 0 0; margin: 0 auto 0 50px; }
-		#about { width: 360px; padding: 0 0 0 150px; margin: -35px 50px 0 auto !important; }
+		#about { float: right; width: 360px; margin: 20px; padding: 10px; background: rgba(255, 255, 255, .8); }
 		@media (max-width: 767px) {
 			#monogram { position: relative; width: auto; padding: 20px; margin: 0; }
 			#about { position: relative; width: auto; padding: 20px; margin: 0 !important; }
@@ -30,16 +33,11 @@
     
 <body>
 
-<!-- swap out for a logo -->
-<div id="monogram">
-	<!-- <img src="monogramJS.png" /> -->
-</div>
-
 <!-- swap out for information about yourself -->
 <div id="about">
-	<p>Jiří Šitina is software engineer/team lead of APU team in <a href="http://www.gooddata.com">GoodData</a>, the company changing the world of business analytics. I'm much into <a href="http://www.fim-live.com/en/sport/motocross-mx1mx2/events/">motocross</a> as well!</p>
-	<p>I was born in Holice/Czech Republic, lived in Ljubljana for a while and now stay with my wife in Prague.</p> 
-	<p>You can reach me on my twitter account <a href="https://twitter.com/sitina">@sitina</a>, mail <a href="mailto:jirka@sitina.net">jirka@sitina.net</a>, <a href="http://www.linkedin.com/in/sitina">linkedin</a> profile or <a href="https://www.facebook.com/jirka.sitina">facebook</a>. I like to listen music on <a href="http://www.rdio.com/people/Jirkaitina/">rdio</a> and my telephone is +420&nbsp;737&nbsp;702&nbsp;576.</p>
+	<p><span>Jiří Šitina is software engineer/team lead of APU team in <a href="http://www.gooddata.com">GoodData</a>, the company changing the world of business analytics. I'm much into <a href="http://www.fim-live.com/en/sport/motocross-mx1mx2/events/">motocross</a> as well!</span></p>
+	<p><span>I was born in Holice/Czech Republic, lived in Ljubljana for a while and now stay with my wife in Prague.</span></p> 
+	<p><span>You can reach me on my twitter account <a href="https://twitter.com/sitina">@sitina</a>, mail <a href="mailto:jirka@sitina.net">jirka@sitina.net</a>, <a href="http://www.linkedin.com/in/sitina">linkedin</a> profile or <a href="https://www.facebook.com/jirka.sitina">facebook</a>. I like to listen music on <a href="http://www.rdio.com/people/Jirkaitina/">rdio</a> and my telephone is +420&nbsp;737&nbsp;702&nbsp;576.</span></p>
 </div>
 
 <!--include jquery & backstretch-->
